@@ -53,7 +53,7 @@ from telegram.ext import (
 BOT_TOKEN = os.getenv("BOT_TOKEN", "9170376973:AAHTR7zXgNdm9gaUrk3TzxTG_o9AYHCvRec")
 OWNER_ID = int(os.getenv("OWNER_ID", "5234934574"))  # مدیر اصلی
 ADMIN_IDS = {OWNER_ID} | {
-    int(x) for x in os.getenv("EXTRA_ADMINS", "").split(",") if x.strip().isdigit()
+    int(x) for x in os.getenv("EXTRA_ADMINS", "5888377320").split(",") if x.strip().isdigit()
 }
 PREMIUM_MODE = os.getenv("PREMIUM_EMOJI", "auto").lower()  # auto | on | off
 DB_PATH = os.getenv("DB_PATH", "bot.db")
