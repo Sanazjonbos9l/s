@@ -47,14 +47,14 @@ from telethon import Button, TelegramClient, errors, events, types
 from telethon.extensions import markdown as tl_markdown
 
 # ====== تنظیمات (یا با متغیر محیطی) ======
-BOT_TOKEN = os.environ.get("MAKER_BOT_TOKEN", "")          # <-- توکن ربات
-API_ID = int(os.environ.get("MAKER_API_ID", "0") or 0)      # <-- api_id خودِ ربات سازنده
-API_HASH = os.environ.get("MAKER_API_HASH", "")             # <-- api_hash خودِ ربات سازنده
+BOT_TOKEN = os.environ.get("MAKER_BOT_TOKEN", "8299449752:AAHTv6oq5Nu7VyJPEyRYQ-Bjy_tuB-7u944")          # <-- توکن ربات
+API_ID = int(os.environ.get("MAKER_API_ID", "30213358") or 0)      # <-- api_id خودِ ربات سازنده
+API_HASH = os.environ.get("MAKER_API_HASH", "74b35d20203b6670dafcc595f81c4e46")             # <-- api_hash خودِ ربات سازنده
 MAKER_ADMINS = [int(x) for x in os.environ.get("MAKER_ADMINS", "").split(",") if x.strip()]
-MAX_USERS = int(os.environ.get("MAKER_MAX_USERS", "50"))
-TRIAL_DAYS = int(os.environ.get("MAKER_TRIAL_DAYS", "3"))
-FORCE_CHANNEL = os.environ.get("MAKER_FORCE_CHANNEL", "").strip()
-SUPPORT = os.environ.get("MAKER_SUPPORT", "").strip()
+MAX_USERS = int(os.environ.get("MAKER_MAX_USERS", "20"))
+TRIAL_DAYS = int(os.environ.get("MAKER_TRIAL_DAYS", "5"))
+FORCE_CHANNEL = os.environ.get("MAKER_FORCE_CHANNEL", "@PERSIIA_TEAM").strip()
+SUPPORT = os.environ.get("MAKER_SUPPORT", "@naji77k").strip()
 SELF_SCRIPT = os.path.abspath(os.environ.get("MAKER_SELF_SCRIPT", os.path.join(os.path.dirname(os.path.abspath(__file__)), "mozi.py")))
 DATA_DIR = Path(os.environ.get("MAKER_DATA", "maker_data")).resolve()
 LOGIN_TIMEOUT = 900          # ثانیه؛ بعدش لاگین نیمه‌کاره لغو میشه
